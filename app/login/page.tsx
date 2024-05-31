@@ -11,7 +11,7 @@ export default function Login({
 }) {
   const signIn = async (formData: FormData) => {
     "use server";
-
+    console.log('This is running on the server.')
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
     const supabase = createClient();
@@ -25,7 +25,7 @@ export default function Login({
       return redirect("/login?message=Could not authenticate user");
     }
 
-    return redirect("/protected");
+    return redirect("/portfolio");
   };
 
   const signUp = async (formData: FormData) => {
