@@ -1,4 +1,4 @@
-# Midas Management
+# Midas Property Management Web Application
 
 ## More coming soon.
 
